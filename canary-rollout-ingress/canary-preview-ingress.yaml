@@ -4,7 +4,7 @@ metadata:
   name: canary-demo-preview
   annotations:
     ingress.kubernetes.io/proxy-body-size: 100M
-    ingress.kubernetes.io/app-root: /
+    #ingress.kubernetes.io/app-root: /
     #kubernetes.io/ingress.class: nginx
 spec:
   rules:
