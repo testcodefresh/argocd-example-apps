@@ -4,9 +4,10 @@ metadata:
   name: canary-demo-preview
 spec:
   ports:
-  - port: 3010
+  - port: 80
     targetPort: http
     protocol: TCP
     name: http
   selector:
     app: canary-demo
+  type: ClusterIP
