@@ -1,0 +1,16 @@
+# added in order to fix issue with release appearance under historyId: -1
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: {{ template "helm-guestbook.fullname" . }}
+  annotations:
+    argocd.argoproj.io/hook: Sync
+spec:
+  template:
+    spec:
+      containers:
+      - name: sleep-j
+        image: alpine:latest
+        command: ["sleep", "5"]
+      restartPolicy: Never
+  backoffLimit: 0
