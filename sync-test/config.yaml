@@ -9,5 +9,5 @@ spec:
     protocol: TCP
     name: http
   selector:
-    app: canary-demo
+    app: sync-test
   type: ClusterIP
