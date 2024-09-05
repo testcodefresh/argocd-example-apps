@@ -1,6 +1,13 @@
 apiVersion: v1
-kind: ConfigMap
+kind: Service
 metadata:
-  name: dummy-config
-data:
-  DUMMY: "true"
+  name: canary-demo
+spec:
+  ports:
+  - port: 80
+    targetPort: http
+    protocol: TCP
+    name: http
+  selector:
+    app: canary-demo
+  type: ClusterIP
