@@ -1,13 +1,13 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: promotion-demo
+  name: canary-demo
 spec:
   ports:
     - port: 80
-      targetPort: http
+      targetPort: https
       protocol: TCP
-      name: http
+      name: https
   selector:
     app: sync-test-2
   type: ClusterIP
