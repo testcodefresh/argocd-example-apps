@@ -5,7 +5,7 @@ metadata:
 spec:
   ports:
     - port: 80
-      targetPort: https
+      targetPort: http
       protocol: TCP
       name: https
   selector:
