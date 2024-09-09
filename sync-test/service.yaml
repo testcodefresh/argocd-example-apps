@@ -7,7 +7,7 @@ spec:
     - port: 80
       targetPort: https
       protocol: TCP
-      name: http
+      name: https
   selector:
     app: sync-test
   type: ClusterIP
