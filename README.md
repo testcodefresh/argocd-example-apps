@@ -26,3 +26,4 @@ to explore ArgoCD and GitOps!
  simple commit
 
  simple commit
+ simple commit
