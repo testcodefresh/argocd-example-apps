@@ -1,8 +1,10 @@
 loans:
   image:
     repository: docker.io/aperturesci/loan
-    tag: v2
+    tag: v3
     pullPolicy: Always
+
+  replicaCount: 1
 
   resources:
     limits:
@@ -15,4 +17,6 @@ loans:
   interest:
     image:
       repository: docker.io/aperturesci/interest
-      tag: v2
+      tag: v3
+
+    replicaCount: 1
