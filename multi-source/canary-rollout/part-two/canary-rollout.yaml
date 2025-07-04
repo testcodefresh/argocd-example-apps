@@ -1,20 +1,20 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Rollout
 metadata:
-  name: canary-demo
+  name: ms-canary-demo
 spec:
   replicas: 3
   revisionHistoryLimit: 1
   selector:
     matchLabels:
-      app: canary-demo
+      app: ms-canary-demo
   template:
     metadata:
       labels:
-        app: canary-demo
+        app: ms-canary-demo
     spec:
       containers:
-        - name: canary-demo
+        - name: ms-canary-demo
           image: quay.io/codefresh/rollouts-demo:green
           imagePullPolicy: Always
           ports:
