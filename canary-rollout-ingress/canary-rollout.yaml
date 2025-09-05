@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
         - name: canary-demo
-          image: quay.io/codefresh/rollouts-demo:purple
+          image: docker.io/testcodefresh/rollouts-demo:purple
           imagePullPolicy: Always
           ports:
             - name: http
