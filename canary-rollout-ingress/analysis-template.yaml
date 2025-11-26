@@ -9,9 +9,8 @@ spec:
   - name: simple-http
     count: 6
     interval: 15s
-    # failureCondition: result != '2'
     failureLimit: 5
     provider:
       web:
         url: "http://canary-demo.{{args.namespace}}:80"
-        timeoutSeconds: 20 # defaults to 10 seconds
+        timeoutSeconds: 20
