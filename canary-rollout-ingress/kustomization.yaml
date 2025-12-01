@@ -7,4 +7,5 @@ resources:
 - canary-ingress.yaml
 - canary-preview-service.yaml
 - canary-preview-ingress.yaml
+- analysis-template.yaml
 - pre-sync-job.yaml
