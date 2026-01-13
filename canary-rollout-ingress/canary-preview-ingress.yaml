@@ -9,7 +9,7 @@ metadata:
     #kubernetes.io/ingress.class: nginx
 spec:
   rules:
-  - host: non-prod-ue1-e2e-1.cf-op.com
+  - host: canary-preview.non-prod-ue1-e2e-1.cf-op.com
     http:
       paths:
       - path: /canary-demo-preview
